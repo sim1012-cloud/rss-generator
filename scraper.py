@@ -120,7 +120,7 @@ def generate_rss():
         fe = fg.add_entry()
         fe.title(article['title'])
         fe.link(href=article['link'])
-        fe.id(article['link'])
+        fe.id(article['link'] + '#v3')
         
         # 双轨输出，兼容所有阅读器
         fe.description(plain_summary) 
